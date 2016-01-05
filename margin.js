@@ -9,9 +9,16 @@ var studentQtyArrayLength = studentQtyArray.length;
 var resultArray=[];
 var priceArrayIncrement=function (){prompt("what is your monthly price increment?", "ex: 10");
 
-var prompt = function(prop, varb){  
-  
-  prompt("What is the " + var + " of " + prop?");                                    
+var promptFn= function(prop, varb){  
+  if (varb != undefined){
+       var propString = prop.toString();
+       var varbString = varb.toString();
+       var newName = propString + varbString;  
+      prompt("What is the " + var + " of " + prop + "?"); //how to set the variable name to the string value stored in var newName?
+  }
+  else prompt("What is the " + prop?");
+}
+
 for(i = 0; i < studentQtyArrayLength; i++) 
 priceArray[i] * 
  
