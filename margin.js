@@ -12,7 +12,8 @@ function (margin){
 			 if (varb != undefined){
 			 	prompt("What is the " + var + " of " + prop + "?"); //how to set the variable name to the string value stored in var newName?
 			 }
-		 else prompt("What is the " + prop?");
+		 else{ prompt("What is the " + prop?");}
+		 ;
 	return promptReturn;
 	}
 	
