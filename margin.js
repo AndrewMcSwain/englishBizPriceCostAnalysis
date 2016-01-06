@@ -4,13 +4,13 @@ function (margin){
 	//prompt
 	function(){prompt("what is your monthly price increment?", "ex: 10");}
 	
-	var promptFn= function(prop, varb){  
+	var promptFn= function(prop, varib){  
 		 var propString = prop.toString();
 		 var varbString = varb.toString();
 		 var newName = propString + varbString;  
 		 var promptReturn = 
 			 if (varb != undefined){
-			 	prompt("What is the " + var + " of " + prop + "?"); //how to set the variable name to the string value stored in var newName?
+			 	prompt("What is the " + varib + " of " + prop + "?"); //how to set the variable name to the string value stored in var newName?
 			 }
 		 else{ prompt("What is the " + prop + "?");}
 		 ;
