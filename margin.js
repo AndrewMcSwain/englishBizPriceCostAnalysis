@@ -4,8 +4,8 @@ function (margin){
 			 
   var studentQtyArray= [2,3,4,5,6,7,8];
   var studentQtyArrayLength = studentQtyArray.length;
-  var priceList = price.calculate();
-  var resultArray = studentQtyCalc();
+  //var priceList = price.calculate();
+  //var resultArray = studentQtyCalc();
    
 
 	//prompt
@@ -24,31 +24,44 @@ function (margin){
 	return promptReturn;
 	}	
 
-var price = {
-  startingvalue: 200,
-  array: [],
-  valueincrement: 20, 
-  max: 500,
-  calculate: {
-    function (){ 
- 	//global variables inside of calculate 
-      var monthlyPaymentStudent = [];// (200, 220, 240, 260...)
-      var monthlyPaymentClass = [];
-      function unitaryStudent(){
-        for(i = price.startingvalue; i < price.max ; i+valueincrement)monthlyPayment.push(i);
-    	return monthlyPaymentStudent;
-           }
-      function unitaryClass(){
-	var counter = 0;
-	while(counter < monthlyPaymentStudent.length){
-		for(i = classSize.min; i <= classSize.max; i*monthlyPaymentStudent[counter]){
-	 		monthlyPaymentClass[counter].push(i);
- 	  		counter++;
-			}
-		}
-	return monthlyPaymentClass;	  
-      }	
-     
+  var price = {
+    startingvalue: 200,
+    array: [],
+    valueincrement: 20, 
+    max: 500,
+    calculate: {
+        monthlypaymentstudent : [],// (200, 220, 240, 260...)
+        monthlypaymentclass : [],
+
+        unitaryStudent: function unitaryStudentFn(){
+          var student = price.calculate.monthlypaymentstudent;
+          for(i = price.startingvalue; i <= price.max; i += price.valueincrement)student.push(i);
+          return student;
+        },
+
+         unitaryClass: function unitaryClassFn(){
+          var counter = 0;
+          var student = price.calculate.monthlypaymentstudent; //is an array [200,220,240]
+          var aula = price.calculate.monthlypaymentclass;//an empty array, to be filled by this funtion
+          var lengthStudent = price.calculate.monthlypaymentstudent.length; //length of the array
+          //var lengthClass = price.calculate.monthlypaymentclass.length;
+          var result = 0;
+    
+          while(counter < lengthStudent){
+            console.log("before:"+ counter)
+            for(i = classSize.min; i <= classSize.max; i++){
+              result = i * student[counter]
+              aula.push(result);  
+            }
+            counter++;
+            console.log("after" + counter);
+            return aula;
+          }
+        }
+    }
+  }
+
+console.log(price.calculate.unitaryStudent());
       ,  //comma of object syntax    
     
       //new item in object calculate
@@ -66,7 +79,7 @@ var expense = {
   teacher : 680,
                };
                        
-   
+}   
 /* I want to determine the 
 	
  
