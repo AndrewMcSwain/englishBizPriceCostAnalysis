@@ -32,7 +32,7 @@ var price = {
   calculate: {
     function (){ 
  	//global variables inside of calculate 
-      var monthlyPaymentStudent = [];
+      var monthlyPaymentStudent = [];// (200, 220, 240, 260...)
       var monthlyPaymentClass = [];
       function unitaryStudent(){
         for(i = price.startingvalue; i < price.max ; i+valueincrement)monthlyPayment.push(i);
@@ -41,12 +41,17 @@ var price = {
       function unitaryClass(){
 	var counter = 0;
 	while(counter < monthlyPaymentStudent.length){
-	  for(i = classSize.min; i <= classSize.max; i*monthlyPaymentSudent[counter]) monthlyPaymentClass.push(i);
- 	  counter++;
-      }		
-
+		for(i = classSize.min; i <= classSize.max; i*monthlyPaymentStudent[counter]){
+	 		monthlyPaymentClass[counter].push(i);
+ 	  		counter++;
+			}
+		}
+	return monthlyPaymentClass;	  
+      }	
+     
       ,  //comma of object syntax    
-     //new item in object calculate
+    
+      //new item in object calculate
      function analysis(monthly, classsize, classqty){
        sales = {
          grosssales : monthlyAmount * classsize * classqty,
