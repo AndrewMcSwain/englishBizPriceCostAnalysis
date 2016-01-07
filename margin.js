@@ -25,26 +25,29 @@ function (margin){
 	}	
 
 var price = {
-  startingvalue : 200,
+  startingvalue: 200,
   array: [],
-  valueincrement : 
-  calculate: = {
+  valueincrement: 20, 
+  max: 500,
+  calculate: {
     function (){ 
  	//global variables inside of calculate 
-      var monthlyPayment = [];
-      function unitary(){
-        for(i = 0; i < classSize.max; i++){
-              if(price.array == true){ //does an empty array return true?
-                  price.startingValue * 1};
-              else {price.startingvalue * price.valueincrement};
-           priceArray.push(monthlyPayment);
-              }
-    	return monthlyPayment;
+      var monthlyPaymentStudent = [];
+      var monthlyPaymentClass = [];
+      function unitaryStudent(){
+        for(i = price.startingvalue; i < price.max ; i+valueincrement)monthlyPayment.push(i);
+    	return monthlyPaymentStudent;
            }
-      ,  //comma of object syntax 
-        
+      function unitaryClass(){
+	var counter = 0;
+	while(counter < monthlyPaymentStudent.length){
+	  for(i = classSize.min; i <= classSize.max; i*monthlyPaymentSudent[counter]) monthlyPaymentClass.push(i);
+ 	  counter++;
+      }		
+
+      ,  //comma of object syntax    
      //new item in object calculate
-     function aggregate(monthly, classsize, classqty){
+     function analysis(monthly, classsize, classqty){
        sales = {
          grosssales : monthlyAmount * classsize * classqty,
          netsales : grosssales - expense.teacher,
