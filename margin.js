@@ -48,15 +48,16 @@ function (margin){
           var result = 0;
     
           while(counter < lengthStudent){
-            console.log("before:"+ counter)
+            console.log("before: "+ counter)
             for(i = classSize.min; i <= classSize.max; i++){
               result = i * student[counter]
-              aula.push(result);  
+              aula[counter].push(result);  
             }
             counter++;
-            console.log("after" + counter);
-            return aula;
+            console.log("after " + counter);
+          
           }
+          return aula;
         }
     }
   }
