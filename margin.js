@@ -15,7 +15,22 @@ function calculate(){
           
          priceArrayStartingValue * priceArrayIncrement;
     priceArray.push(monthlyPayment);
+
 for(i = 0; i < studentQtyArrayLength; i++) 
-priceArray[i] * priceArray
+priceArray[i] * classSize.range(classSize.min, classSize.max)
  
 }
+(classSize.range(classSize.min, classSize.max)
+function aggregateclass(varib/*classSize*/, min, max){
+	var studentCounter = min;
+	var studentIndex = studentIndex;
+  	var value = varib;
+	var returnArray = [];
+	for (priceIndex = 0; i < priceArray.length; priceIndex++){
+	  while (studentCounter < max){ 
+	    value = varib[studentIndex]*priceArray[priceIndex];
+	    value.push(returnArray);
+	    studentCounter++;
+	    };
+
+	  ;alsdfl;kasdfd
