@@ -15,10 +15,12 @@ function (margin){
 		 else{ prompt("What is the " + prop + "?");}
 		 ;
 	return promptReturn;
-	}	
+	}
+	
+	function 
 
 var price = {
-  startingvalue : 200,
+  startingvalue : 200;
   array: [],
   valueincrement : 
   calculate: = {
@@ -34,14 +36,14 @@ var price = {
               }
     	return monthlyPayment;
            }
-      ,  //comma of object syntax 
+      ,//comma of object syntax 
         
      //new item in object calculate
      function aggregate(monthly, classsize, classqty){
        sales = {
          grosssales : monthlyAmount * classsize * classqty,
          netsales : grosssales - expense.teacher,
-         } //closes aggregate.sales
+         }; //closes aggregate.sales
  	 }//closes function price.calculate.aggregate()
     }//closes calculate.function() (the removal of which is being considered)
   }//closes price.calculate
@@ -58,7 +60,7 @@ var studentQtyArrayLength = studentQtyArray.length;
 var priceList = price.calculate();
 var resultArray = studentQtyCalc();
     
-/* I want to determine the 
+for(i = 0; i < studentQtyArrayLength; i++) 
 	
  
 }
