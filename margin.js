@@ -1,5 +1,12 @@
 function (margin){
-
+ 
+  var classSize = { min: 3, max: 8 };
+			 
+  var studentQtyArray= [2,3,4,5,6,7,8];
+  var studentQtyArrayLength = studentQtyArray.length;
+  var priceList = price.calculate();
+  var resultArray = studentQtyCalc();
+   
 
 	//prompt
 	function(){prompt("what is your monthly price increment?", "ex: 10");}
@@ -51,13 +58,7 @@ var expense = {
   teacher : 680,
                };
                        
-var classSize = { min: 3, max: 8 };
-                       
-var studentQtyArray= [2,3,4,5,6,7,8];
-var studentQtyArrayLength = studentQtyArray.length;
-var priceList = price.calculate();
-var resultArray = studentQtyCalc();
-    
+   
 /* I want to determine the 
 	
  
